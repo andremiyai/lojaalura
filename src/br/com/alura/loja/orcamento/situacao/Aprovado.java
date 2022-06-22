@@ -10,7 +10,7 @@ public class Aprovado extends SituacaoOrcamento{
         return orcamento.getValor().multiply(new BigDecimal("0.02"));
     }
 
-    public void reprovar(Orcamento orcamento){
+    public void finalizar(Orcamento orcamento){
         orcamento.setSituacao(new Finalizado());
     }
 
